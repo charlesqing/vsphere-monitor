@@ -1,3 +1,5 @@
+## 此版本修复了esxi.alive指标无法返回宕机状态值的问题，实现了esxi主机既能返回存活值1，又能返回宕机值0
+
 ## vsphere-monitor
 vsphere-monitor 通过 [pyvmomi](https://github.com/vmware/pyvmomi) 采集 vsphere 集群的数据。只需要连接 vcenter 就可以采集集群内的包括 ESXi，datastore，vm 等各种监控数据。数据通过 open-falcon 的数据接口上报给 open-falcon。
 
