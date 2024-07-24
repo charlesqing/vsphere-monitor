@@ -11,7 +11,7 @@ python 2.7
 datastore.capacity|datacetner=datacenter,datastore=datastore,type=type|GAUGE| 存储容量
 datastore.free|datacetner=datacenter,datastore=datastore,type=type|GAUGE| 存储剩余容量
 datastore.freePercent|datacetner=datacenter,datastore=datastore,type=type|GAUGE| 存储剩余容量
-esxi.alive|datacetner=datacenter，cluster_name=cluster_name，host=host|GAUGE|esxi 存活，值为 1，可以用来做 Nodata
+esxi.alive|datacetner=datacenter，cluster_name=cluster_name，host=host|GAUGE|esxi 存活值为 1，宕机值为0，可以用来做 Nodata
 esxi.net.if.in|datacetner=datacenter，cluster_name=cluster_name，host=host|GAUGE|esxi 网络进流量（所有网卡总和）
 esxi.net.if.out|datacetner=datacenter，cluster_name=cluster_name，host=host|GAUGE|esxi 网络出流量（所有网卡总和）
 esxi.memory.freePercent|datacetner=datacenter，cluster_name=cluster_name，host=host|GAUGE|esxi 剩余内存百分比
