@@ -118,6 +118,7 @@ def HostInformation(host,datacenter_name,computeResource_name,content,perf_dict,
         add_data("esxi.alive",1,"GAUGE",tags)
 
     except Exception as error:
+        add_data("esxi.alive",0,"GAUGE",tags) # esxi主机状态返回值,存活值为1,宕机值为0
         print "Unable to access information for host: ", host.name
         print error
         pass
